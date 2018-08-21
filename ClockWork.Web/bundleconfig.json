@@ -1,0 +1,47 @@
+// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+[
+	{
+		"outputFileName": "wwwroot/css/theme.css",
+		// An array of relative input file paths. Globbing patterns supported
+		"inputFiles": [
+			"wwwroot/css/Bootstrap/bootstrap.min.css",
+			"wwwroot/css/font-awesome/font-awesome.min.css",
+			"wwwroot/css/Ionicons/ionicons.min.css",
+			"wwwroot/css/Plugins/Pickers/daterangepicker.css",
+			"wwwroot/css/Plugins/Pickers/bootstrap-datepicker.css",
+			"wwwroot/css/Plugins/Pickers/bootstrap-timepicker.min.css",
+			"wwwroot/css/Plugins/Checkbox/icheckall.css",
+			"wwwroot/css/Plugins/select2.min.css",
+			"wwwroot/css/AdminLTE.min.css",
+			"wwwroot/css/skins/skin-purple.min.css"
+		]
+	},
+	{
+		"outputFileName": "wwwroot/js/site.min.js",
+		"inputFiles": [
+			"wwwroot/lib/jquery/dist/jquery.min.js",
+			"wwwroot/lib/bootstrap/bootstrap.min.js",
+			"wwwroot/lib/jquery/dist/jquery.slimscroll.min.js",
+			"wwwroot/js/site.js",
+			"wwwroot/js/Plugins/select2.full.min.js",
+			"wwwroot/js/Plugins/moment.min.js",
+			"wwwroot/js/Plugins/Masking/jquery.inputmask.js",
+			"wwwroot/js/Plugins/Masking/jquery.inputmask.date.extensions.js",
+			"wwwroot/js/Plugins/Masking/jquery.inputmask.extensions.js",
+			"wwwroot/js/Plugins/Pickers/daterangepicker.js",
+			"wwwroot/js/Plugins/Pickers/bootstrap-datepicker.min.js",
+			"wwwroot/js/Plugins/Pickers/bootstrap-timepicker.min.js",
+			"wwwroot/js/Plugins/Checkbox/icheck.min.js",
+			"wwwroot/js/adminlte.min.js",
+			"wwwroot/js/demo.js"
+		],
+		// Optionally specify minification options
+		"minify": {
+			"enabled": true,
+			"renameLocals": true
+		},
+		// Optionally generate .map file
+		"sourceMap": false
+	}
+]
